@@ -10,20 +10,20 @@ website:
     background: primary
     left:
       - text: "Home"
-        href: index.md
+        href: index.html
       - text: "About Me"
-        href: about.md
+        href: about.html
       - text: "Projects"
         menu:
           - text: "All Projects"
-            href: projects/index.md
+            href: projects/index.html
           - text: "---"
           - text: "Exploratory Data Analysis"
-            href: projects/eda.qmd
+            href: projects/eda.html
           - text: "Data Acquisition"
-            href: projects/data-acquisition.qmd
+            href: projects/data-acquisition.html
           - text: "Final Project"
-            href: projects/final-project.qmd
+            href: projects/final-project.html
     right:
       - icon: github
         href: https://github.com/nathanyjones
@@ -33,10 +33,10 @@ website:
   sidebar:
     - title: "Projects"
       contents:
-        - projects/index.md
-        - projects/eda.qmd
-        - projects/data-acquisition.qmd
-        - projects/final-project.qmd
+        - projects/index.html
+        - projects/eda.html
+        - projects/data-acquisition.html
+        - projects/final-project.html
 
 format:
   html:
