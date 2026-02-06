@@ -2,7 +2,7 @@
 title: "About Me"
 ---
 
-![My Profile Picture](/images/picture_of_me.jpg){width=50%}
+![Nathan Jones](/images/picture_of_me.jpg){width=50%}
 
 ## Background
 
