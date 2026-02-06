@@ -4,28 +4,28 @@
     "href": "index.html",
     "title": "Welcome to My Data Science Portfolio",
     "section": "",
-    "text": "Welcome to my data science portfolio! This site shows my journey learning data science and analytics. Here you’ll find projects that demonstrate what I’ve learned and discovered.\n\n\nThis portfolio shows my work learning data science. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I learned and discovered\n\nI built this site using Quarto and host it on GitHub Pages.\n\n\n\n\nProgramming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data\n\n\n\n\n\n\n\nLearn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
+    "text": "Welcome to my data science portfolio! This site shows my journey learning data science and analytics. Here you’ll find projects that demonstrate what I’ve learned and discovered.\nYou can learn more about me on the About Me page.\n\n\nThis portfolio shows my work learning data science. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I learned and discovered\n\n\n\n\n\nProgramming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning.\nI built this site using Quarto and host it on GitHub Pages."
   },
   {
     "objectID": "index.html#about-this-portfolio",
     "href": "index.html#about-this-portfolio",
     "title": "Welcome to My Data Science Portfolio",
     "section": "",
-    "text": "This portfolio shows my work learning data science. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I learned and discovered\n\nI built this site using Quarto and host it on GitHub Pages."
+    "text": "This portfolio shows my work learning data science. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I learned and discovered"
   },
   {
     "objectID": "index.html#skills-im-learning",
     "href": "index.html#skills-im-learning",
     "title": "Welcome to My Data Science Portfolio",
     "section": "",
-    "text": "Programming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data"
+    "text": "Programming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning.\nI built this site using Quarto and host it on GitHub Pages."
   },
   {
     "objectID": "index.html#my-projects",
     "href": "index.html#my-projects",
     "title": "Welcome to My Data Science Portfolio",
     "section": "",
-    "text": "Learn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
+    "text": "Thanks for visiting! Feel free to explore my projects and see what I’m learning.\nI built this site using Quarto and host it on GitHub Pages."
   },
   {
     "objectID": "projects/index.html",
@@ -62,42 +62,42 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "Write a brief introduction about yourself here. Include:\n\nYour academic background\nYour interest in data science\nYour career goals\nAny relevant experience or projects"
+    "text": "My Profile Picture"
   },
   {
     "objectID": "about.html#background",
     "href": "about.html#background",
     "title": "About Me",
-    "section": "",
-    "text": "Write a brief introduction about yourself here. Include:\n\nYour academic background\nYour interest in data science\nYour career goals\nAny relevant experience or projects"
+    "section": "Background",
+    "text": "Background\nMy name is Nathan Jones, and I am a student at Brigham Young University studying Machine Learning. I have a strong interest in using Statistics and Machine Learning techniques to explore, visualize, and find answers in data. I am also passionate about practical use cases for AI systems that can help automate workflows, both in professional and creative settings."
   },
   {
     "objectID": "about.html#education",
     "href": "about.html#education",
     "title": "About Me",
     "section": "Education",
-    "text": "Education\n\n[Your Degree] - [University Name], [Year]\nRelevant Coursework: Statistics, Data Analysis, Programming, etc."
+    "text": "Education\nBrigham Young University\n\nBachelor of Science in Machine Learning\n\nExpected Graduation: April 2027\n\n\nRelevant Coursework:\n\nAdvanced Machine Learning\nDeep Learning\nData Science Processes\nMathematics of Data Science"
   },
   {
     "objectID": "about.html#skills-interests",
     "href": "about.html#skills-interests",
     "title": "About Me",
     "section": "Skills & Interests",
-    "text": "Skills & Interests\n\nTechnical Skills\n\nProgramming: Python\nData Analysis: Pandas, NumPy\nVisualization: Matplotlib, Seaborn\nMachine Learning: Scikit-learn\nTools: Jupyter Notebooks, Git/GitHub\n\n\n\nAreas of Interest\n\n[Your specific interests, e.g., environmental data, healthcare analytics, finance, etc.]\n[Other areas you’re curious about]"
+    "text": "Skills & Interests\n\nTechnical Skills\n\nProgramming: Python, C++, Java, JavaScript, C\n\nData Analysis & ML: Pandas, NumPy, scikit-learn, PyTorch\n\nVisualization: Matplotlib\n\nTools: Git, GitHub, Jupyter Notebooks, SQL, Tableau\n\n\n\nAreas of Interest\n\nHuman–AI collaboration in creative tools and workflows\n\nReinforcement learning for games and simulations\n\nComputer vision and perception-based models\n\nIntelligent systems for prediction, decision-making, and automation"
   },
   {
     "objectID": "about.html#goals",
     "href": "about.html#goals",
     "title": "About Me",
     "section": "Goals",
-    "text": "Goals\nDescribe what you hope to achieve through your data science journey:\n\nShort-term learning objectives\nLong-term career aspirations\nTypes of problems you want to solve"
+    "text": "Goals\nCurrently, I am working to deepen my understanding of modern machine learning techniques, particularly reinforcement learning and deep learning. My goal is to become more proficient in these areas, and to come up with workflow outlines that can be generally applied when approaching a problem for the first time.\nLong-term, I hope to pursue graduate study in machine learning or a related field. Upon graduating, I hope to work for a tech company to help solve large scale real world problems using techniques of data science and machine learning that I’ve learned in my schooling."
   },
   {
     "objectID": "about.html#contact",
     "href": "about.html#contact",
     "title": "About Me",
     "section": "Contact",
-    "text": "Contact\n\nEmail: your.email@example.com\nGitHub: github.com/your-username\nLinkedIn: linkedin.com/in/your-profile\n\n\nThis portfolio showcases my learning progress and projects completed during my data science studies."
+    "text": "Contact\n\nEmail: nathanyjones@gmail.com\n\nGitHub: github.com/nathanyjones\nLinkedIn: linkedin.com/in/nathan-jones-757529162\n\n\nThis portfolio showcases my learning progress and projects completed during my data science studies."
   },
   {
     "objectID": "projects/data-acquisition.html",

@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Your Name - Data Science Portfolio"
+  title: "Nathan Jones - Data Science Portfolio"
   description: "A showcase of my data science projects and learning journey"
   
   navbar:
@@ -26,9 +26,9 @@ website:
             href: projects/final-project.qmd
     right:
       - icon: github
-        href: https://github.com/your-username
+        href: https://github.com/nathanyjones
       - icon: linkedin
-        href: https://linkedin.com/in/your-profile
+        href: https://www.linkedin.com/in/nathan-jones-757529162/
 
   sidebar:
     - title: "Projects"
@@ -44,4 +44,4 @@ format:
     toc: true
     code-fold: true
     code-tools: true
-    css: styles.css
+    css: docs/styles.css
