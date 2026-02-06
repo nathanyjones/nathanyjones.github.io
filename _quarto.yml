@@ -44,4 +44,4 @@ format:
     toc: true
     code-fold: true
     code-tools: true
-    css: docs/styles.css
+    css: styles.css
