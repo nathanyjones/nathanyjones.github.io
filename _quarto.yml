@@ -24,6 +24,10 @@ website:
             href: projects/data-acquisition.html
           - text: "Final Project"
             href: projects/final-project.html
+      - text: "Tutorials"
+        menu:
+          - text: "Regex Tutorial"
+            href: regex-tutorial.html
     right:
       - icon: github
         href: https://github.com/nathanyjones

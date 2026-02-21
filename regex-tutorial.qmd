@@ -1,3 +1,7 @@
+---
+title: "Regex Tutorial"
+---
+
 # Regex for Python
 
 This tutorial serves as a guide for using regular expressions in python. We will first briefly look at what regex is and why it is useful, then how to create and format regular expressions, and finally how to use the regex library in python.
