@@ -1,11 +1,158 @@
 ---
 title: "Data Acquisition Project"
-author: "Your Name"
-date: "2025-01-01"
+author: "Nathan Jones"
+date: "2026-03-10"
 format:
   html:
     code-fold: true
     toc: true
 ---
 
-This is coming down the pipeline. Check again later.
+## Introduction
+
+Video games have a wide variety of publicly available data, including ratings, genres, release dates, and supported platforms. These kinds of datasets can be useful for exploring trends in the gaming industry or answering questions about what makes games successful.
+
+For this project, I created a dataset of video games released between **2015 and 2025** using the **RAWG Video Games Database API**. For this project, I wanted to practice collecting data from an API and turning the raw responses into a clean dataset.
+
+## Motivating Question
+
+One motivating question behind this dataset is:
+
+**What characteristics are associated with highly rated video games?**
+
+For example, using this dataset we could explore questions such as:
+
+- Do certain genres tend to receive higher ratings?
+- Are games released on more platforms rated differently?
+- Do multiplayer games receive higher or lower ratings than singleplayer games?
+- How do critic scores (Metacritic) compare to user ratings?
+
+This project focuses mostly on collecting and preparing the data, but the final dataset is cleaned and formatted for future exploratory analysis or modeling.
+
+## Data Source
+
+The data was collected from the **RAWG Video Games Database API**, which provides data about thousands of video games.
+
+Key details about the data source:
+
+- Source: [RAWG Video Games Database API](https://rawg.io/apidocs)
+- Accessed using Python's `requests` library
+- Data returned in **JSON format**
+- Paginated API responses were used to retrieve multiple pages of results
+
+RAWG allows personal and educational use of its API with attribution. The dataset in this project represents a **subset of games** returned by the API and is intended solely for educational purposes.
+
+## Ethical Data Collection
+
+When collecting data from APIs or websites, it is important to follow responsible practices.
+
+For this project, I implemented the following:
+
+- **API key usage** rather than anonymous requests
+- **Small delays between requests** (`time.sleep`) to avoid overwhelming the API
+- **Attribution to the RAWG API** as the original source of the data
+- **No private API keys included in the public repository**
+
+Because the data was retrieved through an official API designed for programmatic access, this method follows recommended best practices for data acquisition.
+
+## Data Collection Process
+
+The dataset was created using Python with the following workflow:
+
+1. **Send API requests**
+
+   Using the `requests` library, I sent requests to the RAWG `/games` endpoint with parameters specifying:
+
+   - Release date range: **2015–2025**
+   - Pagination to retrieve multiple pages of results
+
+2. **Collect raw JSON responses**
+
+   Each API response returned a list of games in JSON format. These were combined into a single Python list.
+
+3. **Convert to a DataFrame**
+
+   The collected game data was converted into a **Pandas DataFrame** for easier processing and transformation.
+
+4. **Clean and transform the data**
+
+   Several transformations were performed to make the dataset easier to analyze.
+
+The full code used to collect and clean the data can be found in the project repository.
+
+## Dataset Overview
+
+The final dataset contains:
+
+- **~1000 games**
+- **14 features**
+
+Each row represents a single video game.
+
+### Feature Descriptions
+
+| Feature | Description |
+|--------|-------------|
+| `name` | Title of the game |
+| `primary_genre` | Main genre category |
+| `rating` | Average user rating (0–5) |
+| `ratings_count` | Number of user ratings |
+| `release_year` | Year the game was released |
+| `metacritic` | Metacritic critic score |
+| `playtime` | Estimated completion time |
+| `genre_count` | Number of genres assigned |
+| `game_type` | Singleplayer, Multiplayer, Both, or None |
+| `platform_count` | Number of platforms the game supports |
+| `pc` | Whether the game is available on PC |
+| `console` | Whether the game is available on major consoles |
+| `mobile` | Whether the game is available on mobile |
+| `esrb_rating` | ESRB age rating |
+
+These features include both **numeric variables** and **categorical variables**, making the dataset suitable for many types of analysis.
+
+## Data Cleaning and Transformation
+
+The raw API responses contained nested JSON structures, which required several transformations:
+
+Some examples of cleaning steps include:
+
+- Extracting **platform information** and converting it into boolean variables (`pc`, `console`, `mobile`)
+- Counting the number of platforms (`platform_count`)
+- Extracting genre names and creating a **primary genre**
+- Determining whether a game supports **singleplayer or multiplayer modes**
+- Extracting the **ESRB rating** from nested JSON fields
+- Converting release dates into a **release year**
+
+These steps helped convert the raw API output into a **structured tabular dataset** that is easier to analyze.
+
+## Data Limitations
+
+Like most real-world datasets, this one has several limitations:
+
+- The dataset includes **only a subset (~1000 games)** rather than the full RAWG database.
+- Some fields (such as **Metacritic scores**) are missing for certain games.
+- User ratings may be influenced by **review bias or small sample sizes**.
+- Genre assignments sometimes include multiple categories, making classification imperfect.
+
+These limitations are important to keep in mind when interpreting any analysis based on this data.
+
+## Repository and Reproducibility
+
+All code used to collect and process the dataset is available in the project repository.
+
+Repository:  
+[https://github.com/nathanyjones/rawg-video-game-dataset]
+
+The repository includes:
+
+- A script for collecting the data from the API
+- The cleaned dataset (`game_dataset.csv`)
+- Documentation explaining the dataset structure
+
+Anyone interested in a similar project could modify the script to collect data for different time ranges or additional game features.
+
+## Conclusion
+
+The dataset created for this project provides a starting point for exploring patterns in modern video games. With information about genres, platforms, ratings, and release years, it could be used to investigate questions about what types of games tend to receive higher ratings or broader platform support.
+
+Because the data comes from an API, the dataset could also be expanded in the future to include more games or additional features. This makes it possible to explore larger trends in the video game industry over time.

@@ -88,7 +88,77 @@
     "href": "projects/data-acquisition.html",
     "title": "Data Acquisition Project",
     "section": "",
-    "text": "This is coming down the pipeline. Check again later."
+    "text": "Video games have a wide variety of publicly available data, including ratings, genres, release dates, and supported platforms. These kinds of datasets can be useful for exploring trends in the gaming industry or answering questions about what makes games successful.\nFor this project, I created a dataset of video games released between 2015 and 2025 using the RAWG Video Games Database API. For this project, I wanted to practice collecting data from an API and turning the raw responses into a clean dataset."
+  },
+  {
+    "objectID": "projects/data-acquisition.html#introduction",
+    "href": "projects/data-acquisition.html#introduction",
+    "title": "Data Acquisition Project",
+    "section": "",
+    "text": "Video games have a wide variety of publicly available data, including ratings, genres, release dates, and supported platforms. These kinds of datasets can be useful for exploring trends in the gaming industry or answering questions about what makes games successful.\nFor this project, I created a dataset of video games released between 2015 and 2025 using the RAWG Video Games Database API. For this project, I wanted to practice collecting data from an API and turning the raw responses into a clean dataset."
+  },
+  {
+    "objectID": "projects/data-acquisition.html#motivating-question",
+    "href": "projects/data-acquisition.html#motivating-question",
+    "title": "Data Acquisition Project",
+    "section": "Motivating Question",
+    "text": "Motivating Question\nOne motivating question behind this dataset is:\nWhat characteristics are associated with highly rated video games?\nFor example, using this dataset we could explore questions such as:\n\nDo certain genres tend to receive higher ratings?\nAre games released on more platforms rated differently?\nDo multiplayer games receive higher or lower ratings than singleplayer games?\nHow do critic scores (Metacritic) compare to user ratings?\n\nThis project focuses mostly on collecting and preparing the data, but the final dataset is cleaned and formatted for future exploratory analysis or modeling."
+  },
+  {
+    "objectID": "projects/data-acquisition.html#data-source",
+    "href": "projects/data-acquisition.html#data-source",
+    "title": "Data Acquisition Project",
+    "section": "Data Source",
+    "text": "Data Source\nThe data was collected from the RAWG Video Games Database API, which provides data about thousands of video games.\nKey details about the data source:\n\nSource: RAWG Video Games Database API\nAccessed using Python’s requests library\nData returned in JSON format\nPaginated API responses were used to retrieve multiple pages of results\n\nRAWG allows personal and educational use of its API with attribution. The dataset in this project represents a subset of games returned by the API and is intended solely for educational purposes."
+  },
+  {
+    "objectID": "projects/data-acquisition.html#ethical-data-collection",
+    "href": "projects/data-acquisition.html#ethical-data-collection",
+    "title": "Data Acquisition Project",
+    "section": "Ethical Data Collection",
+    "text": "Ethical Data Collection\nWhen collecting data from APIs or websites, it is important to follow responsible practices.\nFor this project, I implemented the following:\n\nAPI key usage rather than anonymous requests\nSmall delays between requests (time.sleep) to avoid overwhelming the API\nAttribution to the RAWG API as the original source of the data\nNo private API keys included in the public repository\n\nBecause the data was retrieved through an official API designed for programmatic access, this method follows recommended best practices for data acquisition."
+  },
+  {
+    "objectID": "projects/data-acquisition.html#data-collection-process",
+    "href": "projects/data-acquisition.html#data-collection-process",
+    "title": "Data Acquisition Project",
+    "section": "Data Collection Process",
+    "text": "Data Collection Process\nThe dataset was created using Python with the following workflow:\n\nSend API requests\nUsing the requests library, I sent requests to the RAWG /games endpoint with parameters specifying:\n\nRelease date range: 2015–2025\nPagination to retrieve multiple pages of results\n\nCollect raw JSON responses\nEach API response returned a list of games in JSON format. These were combined into a single Python list.\nConvert to a DataFrame\nThe collected game data was converted into a Pandas DataFrame for easier processing and transformation.\nClean and transform the data\nSeveral transformations were performed to make the dataset easier to analyze.\n\nThe full code used to collect and clean the data can be found in the project repository."
+  },
+  {
+    "objectID": "projects/data-acquisition.html#dataset-overview",
+    "href": "projects/data-acquisition.html#dataset-overview",
+    "title": "Data Acquisition Project",
+    "section": "Dataset Overview",
+    "text": "Dataset Overview\nThe final dataset contains:\n\n~1000 games\n14 features\n\nEach row represents a single video game.\n\nFeature Descriptions\n\n\n\nFeature\nDescription\n\n\n\n\nname\nTitle of the game\n\n\nprimary_genre\nMain genre category\n\n\nrating\nAverage user rating (0–5)\n\n\nratings_count\nNumber of user ratings\n\n\nrelease_year\nYear the game was released\n\n\nmetacritic\nMetacritic critic score\n\n\nplaytime\nEstimated completion time\n\n\ngenre_count\nNumber of genres assigned\n\n\ngame_type\nSingleplayer, Multiplayer, Both, or None\n\n\nplatform_count\nNumber of platforms the game supports\n\n\npc\nWhether the game is available on PC\n\n\nconsole\nWhether the game is available on major consoles\n\n\nmobile\nWhether the game is available on mobile\n\n\nesrb_rating\nESRB age rating\n\n\n\nThese features include both numeric variables and categorical variables, making the dataset suitable for many types of analysis."
+  },
+  {
+    "objectID": "projects/data-acquisition.html#data-cleaning-and-transformation",
+    "href": "projects/data-acquisition.html#data-cleaning-and-transformation",
+    "title": "Data Acquisition Project",
+    "section": "Data Cleaning and Transformation",
+    "text": "Data Cleaning and Transformation\nThe raw API responses contained nested JSON structures, which required several transformations:\nSome examples of cleaning steps include:\n\nExtracting platform information and converting it into boolean variables (pc, console, mobile)\nCounting the number of platforms (platform_count)\nExtracting genre names and creating a primary genre\nDetermining whether a game supports singleplayer or multiplayer modes\nExtracting the ESRB rating from nested JSON fields\nConverting release dates into a release year\n\nThese steps helped convert the raw API output into a structured tabular dataset that is easier to analyze."
+  },
+  {
+    "objectID": "projects/data-acquisition.html#data-limitations",
+    "href": "projects/data-acquisition.html#data-limitations",
+    "title": "Data Acquisition Project",
+    "section": "Data Limitations",
+    "text": "Data Limitations\nLike most real-world datasets, this one has several limitations:\n\nThe dataset includes only a subset (~1000 games) rather than the full RAWG database.\nSome fields (such as Metacritic scores) are missing for certain games.\nUser ratings may be influenced by review bias or small sample sizes.\nGenre assignments sometimes include multiple categories, making classification imperfect.\n\nThese limitations are important to keep in mind when interpreting any analysis based on this data."
+  },
+  {
+    "objectID": "projects/data-acquisition.html#repository-and-reproducibility",
+    "href": "projects/data-acquisition.html#repository-and-reproducibility",
+    "title": "Data Acquisition Project",
+    "section": "Repository and Reproducibility",
+    "text": "Repository and Reproducibility\nAll code used to collect and process the dataset is available in the project repository.\nRepository:\n[https://github.com/nathanyjones/rawg-video-game-dataset]\nThe repository includes:\n\nA script for collecting the data from the API\nThe cleaned dataset (game_dataset.csv)\nDocumentation explaining the dataset structure\n\nAnyone interested in a similar project could modify the script to collect data for different time ranges or additional game features."
+  },
+  {
+    "objectID": "projects/data-acquisition.html#conclusion",
+    "href": "projects/data-acquisition.html#conclusion",
+    "title": "Data Acquisition Project",
+    "section": "Conclusion",
+    "text": "Conclusion\nThe dataset created for this project provides a starting point for exploring patterns in modern video games. With information about genres, platforms, ratings, and release years, it could be used to investigate questions about what types of games tend to receive higher ratings or broader platform support.\nBecause the data comes from an API, the dataset could also be expanded in the future to include more games or additional features. This makes it possible to explore larger trends in the video game industry over time."
   },
   {
     "objectID": "projects/eda.html",
@@ -102,14 +172,14 @@
     "href": "projects/index.html",
     "title": "Projects Overview",
     "section": "",
-    "text": "Description: Pick a dataset and explore it to discover insights and answer questions.\n\n\n\nDescription: Find an interesting data source, collect the data, and prepare it for analysis.\n\n\n\nDescription: A comprehensive project that shows off my data science skills."
+    "text": "Description: Pick a dataset and explore it to discover insights and answer questions.\n\n\n\nDescription: Used the RAWG API to collect and clean a dataset of video games released between 2015 and 2025.\n\n\n\nDescription: A comprehensive project that shows off my data science skills."
   },
   {
     "objectID": "projects/index.html#all-projects",
     "href": "projects/index.html#all-projects",
     "title": "Projects Overview",
     "section": "",
-    "text": "Description: Pick a dataset and explore it to discover insights and answer questions.\n\n\n\nDescription: Find an interesting data source, collect the data, and prepare it for analysis.\n\n\n\nDescription: A comprehensive project that shows off my data science skills."
+    "text": "Description: Pick a dataset and explore it to discover insights and answer questions.\n\n\n\nDescription: Used the RAWG API to collect and clean a dataset of video games released between 2015 and 2025.\n\n\n\nDescription: A comprehensive project that shows off my data science skills."
   },
   {
     "objectID": "index.html",
